@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    float: left;
+}
+
+.dr1 {
+    display: inline-block
+    /* z-index: 1; */
+}
+
+.dr1 li {
+    width: 200px;
+    line-height: 50px;
+    background: #7AA8FF;
+    transition: .5s;  
+} 
+
+.dv1 li {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    background: rgba(85, 235, 196, 1);
+}
+
+.dr1 li:hover {
+    background-color: #7AA8FF;
+}
+
+.dv1 li:hover {
+    background-color: #a9ecec;
+}
+
+.dr1>li:hover .dv1 li {
+    height: 50px;
+}
+
+
